@@ -36,6 +36,9 @@ super + {w,m,x,r,s}
 super + alt {1,2,3,4,5}
 	{env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify,steam,discord,bootstrap-studio,github-desktop}
 
+super + alt + 0
+    rofimoji
+
 ##---------- Applications ----------##
 
 # Launch Apps
