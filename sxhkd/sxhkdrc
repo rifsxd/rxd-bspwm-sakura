@@ -55,7 +55,7 @@ super + p
 
 # Lockscreen
 ctrl + alt + l
-    betterlockscreen --lock
+    betterlockscreen -l blur
 
 ##---------- System Keys ----------##
 
