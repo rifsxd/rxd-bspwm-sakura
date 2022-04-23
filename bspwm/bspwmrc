@@ -56,7 +56,8 @@ bspc config focus_follows_pointer true
 bspc rule -r *:*
 
 # Custom rules
-bspc rule -a Pavucontrol state=floating follow=on focus=on
+bspc rule -a Pavucontrol state=floating focus=on
+bspc rule -a Ardesia state=floating focus=on
 
 # 1 > terminal
 bspc rule -a Alacritty desktop='^1' follow=on focus=on

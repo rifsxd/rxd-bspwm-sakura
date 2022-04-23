@@ -38,6 +38,15 @@ super + alt {1,2,3,4,5}
 
 super + alt + 0
     rofimoji
+    
+super + b
+     eww open-many weather_side time_side smol_calendar player_side sys_side sliders_side
+     
+super + shift + b
+     eww close-all
+     
+super + shift + p
+    ardesia
 
 ##---------- Applications ----------##
 
