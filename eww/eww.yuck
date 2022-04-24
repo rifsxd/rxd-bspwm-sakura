@@ -29,7 +29,7 @@
                 (box :class "musicinfo-side" "${music3}${title}")
           (box :orientation "h" :halign "center" :class "musicbtn-side" :space-evenly "false" 
             (button :onclick "playerctl previous" "")
-             (button :class "pause-play-side" :onclick "playerctl play-pause" {musicstat})
+            (button :onclick "playerctl play-pause" "懶 ${musicstat}")
             (button :onclick "playerctl next" "")))))
     (defwidget time_side [] 
       (box :orientation "v" :space-evenly "false" 
