@@ -19,6 +19,7 @@
       (box :orientation "h" :space-evenly "false" 
         (box :class "weather-icon-side" :style "color: ${weather-hex}" {weather-icon})
         (box :class "weather-info-side" :orientation "v" :space-evenly "false" 
+        (box :orientation "${weather-up}")
           (box :class "temperature-side" "${temperature}  ")
           (box :class "weather-stat-side" {weather-stat-side}))))
     (defwidget player_side [] 
@@ -146,7 +147,7 @@
     (defpoll weather-quote2 :interval "20m"  "~/.config/eww/scripts/getwethquote2")
     (defpoll weather-stat :interval "20m"  "cat /tmp/xmonad/weather/weather-stat")
     (defpoll weather-stat-side :interval "20m"  "~/.config/eww/scripts/weather-trimmer")
-    (defpoll runscript :interval "30m" "~/.config/eww/scripts/getweather")
+    (defpoll weather-up :interval "30m" "~/.config/eww/scripts/getweather")
 
     ;; Do not disturb var
     (defpoll disturb-hex :interval "1s"  "cat /tmp/xmonad/donotdisturb/color")
