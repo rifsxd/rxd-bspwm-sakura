@@ -119,14 +119,14 @@
 
   
     ;; Music vars
-    (defpoll music :interval "5s"  "playerctl metadata --format '{{ artist }} - {{ title }}'")
-    (defpoll music2 :interval "10h"  "~/.config/eww/scripts/getartist")
-    (defpoll music3 :interval "10h"  "~/.config/eww/scripts/gettitle")
-    (defpoll art :interval "10h"  "~/.config/eww/scripts/getart")
+    (defpoll music :interval "1s"  "playerctl metadata --format '{{ artist }} - {{ title }}'")
+    (defpoll music2 :interval "1s"  "~/.config/eww/scripts/getartist")
+    (defpoll music3 :interval "1s"  "~/.config/eww/scripts/gettitle")
+    (defpoll art :interval "5s"  "~/.config/eww/scripts/getart")
     (defpoll volume :interval "16ms"  "~/.config/eww/scripts/getvol")
     (defpoll bright :interval "16ms"  "~/.config/eww/scripts/getbri")
     (defpoll musicstat :interval "1s"  "~/bin/spotifystatus")
-    (defpoll cover :interval "2s"  "~/.config/eww/scripts/echoart")
+    (defpoll cover :interval "5s"  "~/.config/eww/scripts/echoart")
     (defpoll title :interval "1s"  "~/.config/eww/scripts/echotitle")
     (defpoll artist :interval "1s"  "cat /tmp/xmonad/spotify/artist")
     (defpoll musicpos :interval "16ms"  "~/.config/eww/scripts/getposition")

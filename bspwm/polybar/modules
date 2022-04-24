@@ -168,7 +168,7 @@ fuzzy-match = true
 ; ws-icon-[0-9]+ = label;icon
 ; Note that the label needs to correspond with the bspwm workspace name
 ws-icon-0 = I;
-ws-icon-1 = II;
+ws-icon-1 = II;
 ws-icon-2 = III;
 ws-icon-3 = IV;
 ws-icon-4 = V;
@@ -252,6 +252,9 @@ click-left = ~/.config/bspwm/polybar/extra-modules/mpris.py previous &
 click-right = ~/.config/bspwm/polybar/extra-modules/mpris.py next &
 click-middle = ~/.config/bspwm/polybar/extra-modules/mpris.py play-pause &
 format-foreground = #EC98F3
+format = <label>
+label-font = 5
+
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -284,7 +287,7 @@ accumulate-stats = true
 unknown-as-up = true
 
 format-connected = <label-connected>
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-font = 3
 format-connected-prefix-foreground = #5EBCE1
 label-connected-foreground= #EE99F3
@@ -333,11 +336,35 @@ ramp-signal-foreground = ${color.CYAN}
 
 [module/sep]
 type = custom/text
-content = ◆
+content = //
 
 content-background = ${color.BACKGROUND}
 content-foreground = #F15AA5
 content-padding = 2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/win]
+type = internal/xwindow
+
+; Available tags:
+;   <label> (default)
+format = <label>
+format-background = #EB97F2
+format-foreground = #030315
+format-padding = 1
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-maxlen = 20
+
+; Used instead of label when there is no window title
+; Available tokens:
+;   None
+label-empty = Empty
+label-empty-foreground = #030315
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______
