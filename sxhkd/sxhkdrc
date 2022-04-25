@@ -23,9 +23,6 @@ alt + F1
 super + n
 	nmd
 
-# Rofi Themes Menu
-ctrl + alt + t
-	sh ~/.config/bspwm/rofi/bin/themes
 
 # Rofi Menus/Applets
 super + {w,m,x,r,s}
