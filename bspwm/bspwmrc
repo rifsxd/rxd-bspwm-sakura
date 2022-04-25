@@ -120,7 +120,7 @@ killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar
 
 # Lauch Polybar
 
-polybar &
+polybar -c ~/.config/bspwm/polybar/config &
 
 # Lauch xsettingsd daemon
 xsettingsd &
