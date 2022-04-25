@@ -114,12 +114,13 @@ bspc rule -a stalonetray state=floating manage=off
 
 ## Autostart -------------------------------------------------#
 
+
+# Kill if already running
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar
+
 # Lauch Polybar
 
 polybar &
-
-# Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager
 
 # Lauch xsettingsd daemon
 xsettingsd &
