@@ -43,7 +43,7 @@ super + shift + b
      eww close-all
      
 super + shift + p
-    ardesia
+     ardesia
 
 ##---------- Applications ----------##
 
@@ -67,23 +67,23 @@ ctrl + alt + l
 
 # Take a screenshot
 Print
-	takeshot --now
+	sh ~/.config/bspwm/rofi/bin/screenshot
 	
 # Take screenshot in 5 second
-alt + Print	
-	takeshot --in5
+#alt + Print	
+#	takeshot --in5
 
 # Take screenshot in 10 second
-shift + Print	
-	takeshot --in10
+#shift + Print	
+#	takeshot --in10
 
 # Take screenshot of active window
-ctrl + Print
-	takeshot --win
+#ctrl + Print
+#	takeshot --win
 
 # Take screenshot of area
-ctrl + alt + Print
-	takeshot --area
+#ctrl + alt + Print
+#	takeshot --area
 
 # Brighness control
 XF86MonBrightness{Up,Down}
