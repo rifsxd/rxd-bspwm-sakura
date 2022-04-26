@@ -57,7 +57,7 @@ ctrl + alt + {v,r,h}
 
 # Color Picker
 super + p
-	gpick -s
+	gpick -p
 
 # Lockscreen
 ctrl + alt + l
