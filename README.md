@@ -4,12 +4,12 @@
 * PKG Including PICOM/XSHKD/FEH/NMD/ROFI-MODULES(powermenu, network-manager-window, screenshotmenu, open-as-root-menu, windows-select-menu) & Find Out More By Trying It Out! 
 
 * Requirements -
-   * aur helper i.e ( paru or yay )
+   * aur helper i.e ( paru or yay ) /
 * Dependencies -
-   * pkgbuild will autoresolve all dependencies including bspwm & polybar
+   * pkgbuild will autoresolve all dependencies including bspwm & polybar /
 
 * Simple Bash Script Install Method -
-   * $ sh build.sh or $ ./build.sh
+   * $ sh build.sh or $ ./build.sh /
 
 <p align="center">  
     <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
