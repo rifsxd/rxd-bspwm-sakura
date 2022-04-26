@@ -12,7 +12,7 @@
    * $ sh build.sh or $ ./build.sh /
    
 * Usefull Keybinds -
-   * mod(windows)
+   * mod = windows
    * rofi ( mod / alt + f1 )
    * terminal ( mod + enter )
    * file-manager ( mod + shift + f )
