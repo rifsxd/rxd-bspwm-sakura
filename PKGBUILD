@@ -10,7 +10,7 @@ license=('GPL3')
 makedepends=()
 depends=(       'bspwm'
 		'sxhkd' 'playerctl'
-		'alacritty' 'thunar' 'geany'
+		'alacritty' 'thunar' 'geany' 'gpick'
 		'rofi' 'dunst'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
