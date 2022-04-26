@@ -9,7 +9,6 @@
    * pkgbuild will autoresolve all dependencies including bspwm & polybar
 
 * Simple Bash Script Install Method -
-  * cd $gitclonerepo/
    * $ sh build.sh or $ ./build.sh
 
 <p align="center">  
