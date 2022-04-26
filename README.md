@@ -1,0 +1,2 @@
+# rxd-bspwm
+ // Configuration : Bspwm

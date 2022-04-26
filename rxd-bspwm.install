@@ -1,0 +1,5 @@
+post_install() {
+	echo '*************************'
+	echo -e "\n[*] Configurations for BSPWM is updated.\nLooks like everything went okay... make sure to check everything manually in ~/.config to make sure the files have changed before rebooting/relogin!\n"
+	echo '*************************'
+}
