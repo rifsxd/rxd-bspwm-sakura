@@ -10,6 +10,16 @@
 
 * Simple Bash Script Install Method -
    * $ sh build.sh or $ ./build.sh /
+   
+* Usefull Keybinds -
+   * mod(windows)
+   * rofi ( mod / alt + f1 )
+   * terminal ( mod + enter )
+   * powermenu ( mod + x )
+   * screenshotmenu ( print / mod + s )
+   * windowsmenu ( mod + w )
+   * open-as-root ( mod + r )
+   * reload-all-configs ( alt + shift + r )
 
 <p align="center">  
     <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
