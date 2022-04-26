@@ -248,13 +248,13 @@ label-marked = " | Marked"
 type = custom/script
 exec = ~/.config/bspwm/polybar/extra-modules/mpris.py -f '{icon} {artist} - {title}'
 tail = true
-click-left = ~/.config/polybar/extra-modules/mpris.py previous &
-click-right = ~/.config/polybar/extra-modules/mpris.py next &
-click-middle = ~/.config/polybar/extra-modules/mpris.py play-pause &
+click-left = ~/.config/bspwm/polybar/extra-modules/mpris.py previous &
+click-right = ~/.config/bspwm/polybar/extra-modules/mpris.py next &
+click-middle = ~/.config/bspwm/polybar/extra-modules/mpris.py play-pause &
 format-foreground = #EC98F3
 format = <label>
 label-font = 4
-
+label-maxlen = 40
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 

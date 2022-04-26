@@ -3,21 +3,18 @@
 pkgname=rxd-bspwm
 pkgver=1.0
 pkgrel=1
-pkgdesc="RifsxD's Bspwm Configurations for Archcraft"
+pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/archcraft-os/archcraft-bspwm"
 arch=('any')
 license=('GPL3')
 makedepends=()
-depends=('bspwm'
+depends=(       'bspwm'
 		'sxhkd' 
 		'alacritty' 'thunar' 'geany'
-		'rofi' 'polybar' 'dunst'
-		'mpd' 'mpc'
+		'rofi' 'dunst'
+		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
-		'ksuperkey'
-		'betterlockscreen'
 		'picom' 
-		'xfce-polkit' 
 		'xfce4-power-manager' 
 		'xsettingsd'
 		'xorg-xsetroot'
