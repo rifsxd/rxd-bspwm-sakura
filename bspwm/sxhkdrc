@@ -21,7 +21,7 @@ alt + F1
 
 # Rofi Network Menu
 super + n
-	nmd
+	networkmanager_dmenu
 
 
 # Rofi Menus/Applets
