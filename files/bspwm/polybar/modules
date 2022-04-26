@@ -21,7 +21,7 @@ label-volume-foreground = #AB7DE1
 
 format-muted = <label-muted>
 format-muted-prefix = 婢
-format-muted-prefix-font = 2
+format-muted-prefix-font = 1
 format-muted-prefix-foreground = #FD75AA
 
 label-volume = %percentage%%
@@ -178,7 +178,7 @@ ws-icon-7 = VIII;
 ws-icon-default = 
 
 format = <label-state>
-format-font = 2
+format-font = 1
 
 label-monitor = %name%
 
@@ -253,7 +253,7 @@ click-right = ~/.config/polybar/extra-modules/mpris.py next &
 click-middle = ~/.config/polybar/extra-modules/mpris.py play-pause &
 format-foreground = #EC98F3
 format = <label>
-label-font = 5
+label-font = 4
 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -267,12 +267,12 @@ time = %I:%M %p
 time-alt = %A, %d %B %Y
 
 format = <label>
-format-prefix = " "
-format-prefix-font = 3
+format-prefix = " "
+format-prefix-font = 2
 format-prefix-foreground = #5EBCE1
 
 label = %time%
-label-font = 4
+label-font = 1
 label-foreground = #EC98F2
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -288,7 +288,7 @@ unknown-as-up = true
 
 format-connected = <label-connected>
 format-connected-prefix = " "
-format-connected-prefix-font = 3
+format-connected-prefix-font = 1
 format-connected-prefix-foreground = #5EBCE1
 label-connected-foreground= #EE99F3
 
@@ -359,6 +359,7 @@ format-padding = 1
 ; Default: %title%
 label = %title%
 label-maxlen = 20
+label-font = 1
 
 ; Used instead of label when there is no window title
 ; Available tokens:
