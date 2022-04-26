@@ -15,6 +15,7 @@
    * mod(windows)
    * rofi ( mod / alt + f1 )
    * terminal ( mod + enter )
+   * file-manager ( mod + shift + f )
    * powermenu ( mod + x )
    * screenshotmenu ( print / mod + s )
    * windowsmenu ( mod + w )
