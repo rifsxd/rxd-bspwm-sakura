@@ -18,7 +18,7 @@
    * file-manager ( mod + shift + f )
    * powermenu ( mod + x )
    * screenshotmenu ( print / mod + s )
-   * windowsmenu ( mod + w )
+   * windowmenu ( mod + w )
    * open-as-root ( mod + r )
    * reload-all-configs ( alt + shift + r )
 
