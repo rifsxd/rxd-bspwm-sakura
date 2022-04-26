@@ -8,6 +8,10 @@
 * Dependencies -
     pkgbuild will autoresolve all dependencies including bspwm & polybar
 
+* Simple Bash Script Method -
+   cd $gitclonerepo/
+    $ sh build.sh or $ ./build.sh
+
 <p align="center">  
     <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
 	<a href="/docs/license/LICENSE" target="_blank">
