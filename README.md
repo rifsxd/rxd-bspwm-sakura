@@ -22,6 +22,7 @@
    * open-as-root ( mod + r )
    * draw-over-screen ( mod + shift + p )
    * emoji-selector ( mod + alt + 0 )
+   * color picker ( mod + p )
    * reload-all-configs ( alt + shift + r )
    
 
