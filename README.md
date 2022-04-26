@@ -20,7 +20,10 @@
    * screenshotmenu ( print / mod + s )
    * windowmenu ( mod + w )
    * open-as-root ( mod + r )
+   * draw-over-screen ( mod + shift + p )
+   * emoji-selector ( mod + alt + 0 )
    * reload-all-configs ( alt + shift + r )
+   
 
 <p align="center">  
     <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
