@@ -9,7 +9,7 @@ arch=('any')
 license=('GPL3')
 makedepends=()
 depends=(       'bspwm'
-		'sxhkd' 
+		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany'
 		'rofi' 'dunst'
 		'mpd' 'mpc' 'jq' 'lxappearance'
