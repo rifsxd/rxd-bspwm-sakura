@@ -1,4 +1,4 @@
-<h1 align="center">RxD BSPWM DOTFILES - Git</a></h1>
+<h1 align="center">RxD BSPWM Sakura Theme - Git</a></h1>
 
 * A Light & Sweet Theme/Scheme For BSPWM/EWW/GEANY/POLYBAR/ROFI/DUNST/ALACRITTY 
 * PKG Including PICOM/XSHKD/FEH/NMD/ROFI-MODULES(powermenu, network-manager-window, screenshotmenu, open-as-root-menu, windows-select-menu) & Find Out More By Trying It Out! 
