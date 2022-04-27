@@ -1,7 +1,7 @@
 # Maintainer: RifsxD
 
 pkgname=rxd-bspwm-sakura
-pkgver=1.20
+pkgver=1.22
 pkgrel=1
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
