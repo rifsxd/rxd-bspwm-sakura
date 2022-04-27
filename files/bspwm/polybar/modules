@@ -2,7 +2,7 @@
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
@@ -175,6 +175,7 @@ ws-icon-4 = V;
 ws-icon-5 = VI;
 ws-icon-6 = VII;
 ws-icon-7 = VIII;
+ws-icon-8 = IX;
 ws-icon-default = 
 
 format = <label-state>

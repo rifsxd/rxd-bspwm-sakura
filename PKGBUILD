@@ -1,7 +1,7 @@
 # Maintainer: RifsxD
 
 pkgname=rxd-bspwm
-pkgver=1.0
+pkgver=1.06
 pkgrel=1
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/BSPWM-DOT-FILES"
