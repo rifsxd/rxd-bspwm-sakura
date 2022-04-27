@@ -1,10 +1,10 @@
 # Maintainer: RifsxD
 
-pkgname=rxd-bspwm
+pkgname=rxd-bspwm-sakura
 pkgver=1.10
 pkgrel=1
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
-url="https://github.com/RifsxD/BSPWM-DOT-FILES"
+url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
 arch=('any')
 license=('GPL3')
 makedepends=()
