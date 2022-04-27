@@ -24,17 +24,17 @@ height = 24
 offset-x = 0
 offset-y = 0
 
-background = ${color.BACKGROUND}
-foreground = ${color.FOREGROUND}
+background = #030315
+foreground = #F09AF3
 
 radius-top = 0.0
 radius-bottom = 0.0
 
 line-size = 2
-line-color = ${color.BLUE}
+line-color = #9F6495
 
 border-size = 4
-border-color = ${color.BACKGROUND}
+border-color = #030315
 
 padding = 1
 module-margin-left = 0
@@ -57,11 +57,11 @@ dim-value = 1.0
 wm-name = bspwm
 locale = 
 
+pseudo-transparency = false
 tray-position = right
 tray-detached = false
 tray-maxsize = 16
-tray-transparent = false
-tray-background = ${color.BACKGROUND}
+tray-background = #030315
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 0
