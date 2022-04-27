@@ -1,7 +1,7 @@
 # Maintainer: RifsxD
 
 pkgname=rxd-bspwm-sakura
-pkgver=1.11
+pkgver=1.15
 pkgrel=1
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
@@ -15,7 +15,6 @@ depends=(       'bspwm'
 		'rofi' 'dunst'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
-		'picom' 
 		'xfce4-power-manager' 
 		'xsettingsd'
 		'xorg-xsetroot'

@@ -27,6 +27,6 @@ build_pkg () {
 }
 
 # Execute
-yay -S ardesia rofimoji eww networkmanager-dmenu-git polybar ksuperkey betterlockscreen xfce-polkit
-paru -S ardesia rofimoji eww networkmanager-dmenu-git polybar ksuperkey betterlockscreen xfce-polkit
+yay -S ardesia rofimoji eww networkmanager-dmenu-git polybar ksuperkey betterlockscreen xfce-polkit picom-ibhagwan-git
+paru -S ardesia rofimoji eww networkmanager-dmenu-git polybar ksuperkey betterlockscreen xfce-polkit picom-ibhagwan-git
 makepkg -si
