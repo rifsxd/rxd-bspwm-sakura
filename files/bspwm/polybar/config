@@ -57,7 +57,7 @@ dim-value = 1.0
 wm-name = bspwm
 locale = 
 
-pseudo-transparency = false
+pseudo-transparency = true
 tray-position = right
 tray-detached = false
 tray-maxsize = 16
