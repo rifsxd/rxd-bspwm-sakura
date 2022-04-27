@@ -1,7 +1,7 @@
 # Maintainer: RifsxD
 
 pkgname=rxd-bspwm-sakura
-pkgver=1.10
+pkgver=1.11
 pkgrel=1
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
@@ -11,6 +11,7 @@ makedepends=()
 depends=(       'bspwm'
 		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany' 'gpick'
+		'pavucontrol'
 		'rofi' 'dunst'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
