@@ -33,7 +33,7 @@ package() {
 	mkdir -p ~/.config && mkdir -p ~/config/eww && mkdir -p ~/config/bspwm && mkdir -p ~/config/wallpapers && mkdir -p ~/config/alacritty && mkdir -p ~/config/networkmanager-dmenu && mkdir -p ~/config/geany
 
 	# Copy bspwm specific config files
-	install -Dm 644 ${srcdir}/.fehbg   			~/.fehbg
+	install -Dm 755 ${srcdir}/.fehbg   			~/.fehbg
 	
 	cp -r ${srcdir}/networkmanager-dmenu	~/.config/
 	cp -r ${srcdir}/eww	                    ~/.config/
