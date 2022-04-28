@@ -10,7 +10,7 @@
           SigLevel = Optional DatabaseOptional
           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
-* Dependencies -
+* Dependencies (if not using rxd-arch-repo)-
    * MAINLINE_ARCH_REPO :
    
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
