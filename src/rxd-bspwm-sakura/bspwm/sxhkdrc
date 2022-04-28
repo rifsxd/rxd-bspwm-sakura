@@ -87,18 +87,19 @@ Print
 
 # Brighness control
 XF86MonBrightness{Up,Down}
-	brightness{ --inc, --dec}
+        xbacklight -{inc,dec} 10
 	
 # Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-	volume{ --inc, --dec}
+XF86Audio{Raise,Lower}Volume
+	amixer -D pulse sset Master {5%+,5%-} unmute
 
+# Volume Mute control
 XF86AudioMute
-	volume --toggle
+    amixer -D pulse set Master 1+ toggle
 	
 # Music control
-XF86Audio{Next,Prev,Play,Stop}
-	mpc {next,prev,toggle,stop}
+XF86Audio{Play,Stop,Prev,Next}
+    playerctl {play-pause,stop,previous,next}
 
 ##---------- Bspwm ----------##
 
