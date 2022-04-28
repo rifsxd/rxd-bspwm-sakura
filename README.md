@@ -11,7 +11,7 @@
           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
 * Dependencies -
-   * MAINLINE_ARCH_REPO =
+   * MAINLINE_ARCH_REPO :
    
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
@@ -21,7 +21,7 @@
 		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
                          
 	           	          
-   * AUR OR RXD_ARCH_REPO =
+   * AUR OR RXD_ARCH_REPO :
    
             'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
@@ -31,7 +31,7 @@
    * PACMAN_INSTALL: 
    
               sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
-   * LOCAL_BUILD: $ 
+   * LOCAL_BUILD: 
    
               git clone https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme.git
               cd $TO_THE_CLONED_REPO
