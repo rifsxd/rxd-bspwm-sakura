@@ -4,13 +4,38 @@
 * PKG Including PICOM/XSHKD/FEH/NMD/ROFI-MODULES(powermenu, network-manager-window, screenshotmenu, open-as-root-menu, windows-select-menu) & Find Out More By Trying It Out! 
 
 * Requirements -
-   * aur helper i.e ( paru or yay ) /
+   * Need to add rxd-arch-repo in pacman.conf for installing non-mainline arch (aur) prebuilt packages for dependencies 
+         { 
+           [rxd-arch-repo]
+           SigLevel = Optional DatabaseOptional
+           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
+         }
+         
 * Dependencies -
-   * pkgbuild will autoresolve all dependencies including bspwm & polybar /
-
-* Simple Bash Script Install Method -
-   * $ sh build.sh or $ ./build.sh /
+   * mainline arch repo : { 
    
+            'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
+		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
+		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
+		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'           
+		    'maim' 'xclip' 'viewnior' 'feh' 'xfce4-power-manager' 
+		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
+		    
+	           	          }
+	           	          
+   * aur or rxd-arch-repo : {
+   
+            'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
+            'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
+            
+                            }
+                            
+* Installation -
+   * PACMAN_INSTALL: $ sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
+   * LOCAL_BUILD: $ git clone https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme.git
+                  $ cd $TO_THE_CLONED_REPO
+                  $ makepkg -si && cp -r /use/share/rxd-sakura/* ~/.config/
+                  
 * Usefull Keybinds -
    * mod = windows / command
    * rofi ( mod / alt + f1 )

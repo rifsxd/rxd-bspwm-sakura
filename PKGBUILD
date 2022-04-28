@@ -2,7 +2,7 @@
 
 pkgname=rxd-bspwm-sakura
 pkgrel=1
-pkgver=1.25
+pkgver=1.50
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
 arch=('any')
@@ -15,6 +15,8 @@ depends=(       'bspwm'
 		'rofi' 'dunst' 'xsel' 'xdotool'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
+		'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
+        'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
 		'xfce4-power-manager' 
 		'xsettingsd'
 		'xorg-xsetroot'
@@ -22,39 +24,31 @@ depends=(       'bspwm'
 )
 conflicts=()
 provides=("${pkgname}")
-options=(!strip !emptydirs)
 install="${pkgname}.install"
 
-prepare() {
-	cp -af ../files/. ${srcdir}
-}
 
 package() {
-	mkdir -p ~/.config && mkdir -p ~/config/eww && mkdir -p ~/config/bspwm && mkdir -p ~/config/wallpapers && mkdir -p ~/config/alacritty && mkdir -p ~/config/networkmanager-dmenu && mkdir -p ~/config/geany
-
 	# Copy bspwm specific config files
-	install -Dm 755 ${srcdir}/.fehbg   			~/.fehbg
+	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/fehbg   	${pkgdir}/usr/share/rxd-sakura/bspwm/fehbg
 	
-	cp -r ${srcdir}/networkmanager-dmenu	~/.config/
-	cp -r ${srcdir}/eww	                    ~/.config/
-	cp -r ${srcdir}/geany	                ~/.config/
-	cp -r ${srcdir}/alacritty	            ~/.config/
-	cp -r ${srcdir}/wallpapers	            ~/.config/
+	cp -r ${srcdir}/rxd-bspwm-sakura/networkmanager-dmenu	${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/eww	                ${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/geany	                ${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/alacritty	            ${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/wallpapers	            ${pkgdir}/usr/share/rxd-sakura/
 
 	# Copy window manager configs
-	cp -r ${srcdir}/bspwm 			~/.config/
-	sudo cp -r ${srcdir}/fonts/rxd			/usr/share/fonts/
-	sudo cp -r ${srcdir}/fonts/noto-cjk		/usr/share/fonts/
-	sudo cp -r ${srcdir}/fonts/noto     	/usr/share/fonts/
+	cp -r ${srcdir}/rxd-bspwm-sakura/bspwm 			        ${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/fonts		    ${pkgdir}/usr/share/fonts/
 	chmod +x ~/.config/bspwm/bin/*
 	chmod +x ~/.config/bspwm/rofi/bin/*
 	chmod +x ~/.config/bspwm/rofi/bin/*
 	chmod +x ~/.config/bspwm/polybar/extra-modules/*
 
-	install -Dm 755 ${srcdir}/bspwm/bspwmrc   			~/.config/bspwm/bspwmrc
-	install -Dm 644 ${srcdir}/bspwm/dunstrc   			~/.config/bspwm/dunstrc
-	install -Dm 644 ${srcdir}/bspwm/picom.conf   		~/.config/bspwm/picom.conf
+	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/bspwmrc   			${pkgdir}/usr/share/rxd-sakura/bspwm/bspwmrc
+	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/dunstrc   		    ${pkgdir}/usr/share/rxd-sakura/bspwm/dunstrc
+	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/picom.conf   		${pkgdir}/usr/share/rxd-sakura/bspwm/picom.conf
 
 	# Copy keybindings config file
-	install -Dm 644 ${srcdir}/bspwm/sxhkdrc				~/.config/bspwm/sxhkdrc
+	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/sxhkdrc				${pkgdir}/usr/share/rxd-sakura/bspwm/sxhkdrc
 }

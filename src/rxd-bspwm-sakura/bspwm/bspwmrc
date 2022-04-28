@@ -1,0 +1,163 @@
+#!/usr/bin/env bash
+
+
+## Environtment
+export PATH="${PATH}:$HOME/.config/bspwm/bin"
+
+## Java Applications
+wmname RxD
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+## Get colors from .Xresources -------------------------------#
+#xrdb ~/.Xresources
+#getcolors() {
+#	FOREGROUND=$(xrdb -query | grep 'foreground:'| awk '{print $NF}')
+#	BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
+#	BLACK=$(xrdb -query | grep 'color0:'| awk '{print $NF}')
+#	RED=$(xrdb -query | grep 'color1:'| awk '{print $NF}')
+#	GREEN=$(xrdb -query | grep 'color2:'| awk '{print $NF}')
+#	YELLOW=$(xrdb -query | grep 'color3:'| awk '{print $NF}')
+#	BLUE=$(xrdb -query | grep 'color4:'| awk '{print $NF}')
+#	MAGENTA=$(xrdb -query | grep 'color5:'| awk '{print $NF}')
+#	CYAN=$(xrdb -query | grep 'color6:'| awk '{print $NF}')
+#	WHITE=$(xrdb -query | grep 'color7:'| awk '{print $NF}')
+#}
+#getcolors
+
+## Configurations --------------------------------------------#
+workspaces() {
+	name=1
+	for monitor in `bspc query -M`; do
+		#bspc monitor ${monitor} -n "$name" -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII' 'IX'
+		bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' '' '' '' ''
+		let name++
+	done
+}
+workspaces
+
+bspc config border_width 1
+bspc config window_gap 10
+bspc config split_ratio 0.50
+
+bspc config focused_border_color "#EEC1FF" 
+bspc config normal_border_color "#9F6495"
+bspc config active_border_color "#C7E5F9"
+bspc config presel_feedback_color "#FCA4E0"
+
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config paddingless_monocle true
+bspc config single_monocle false
+bspc config focus_follows_pointer true
+
+## Window rules ----------------------------------------------#
+
+# remove all rules first
+bspc rule -r *:*
+
+# Custom rules
+bspc rule -a Pavucontrol state=floating focus=on
+bspc rule -a Ardesia state=floating focus=on
+
+# 1 > terminal
+bspc rule -a Alacritty desktop='^1' follow=on focus=on
+bspc rule -a Xfce4-terminal desktop='^1' follow=on focus=on
+
+# 2 > web
+bspc rule -a firefox desktop='^2' follow=on focus=on
+bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+
+# 3 > files
+declare -a files=(Pcmanfm Thunar qBittorrent)
+for i in ${files[@]}; do
+   bspc rule -a $i desktop='^3' follow=on focus=on; done
+
+# 4 > code
+declare -a code=(Geany code-oss)
+for i in ${code[@]}; do
+   bspc rule -a $i desktop='^4' follow=on focus=on; done
+
+# 5 > office and docs
+declare -a office=(Gucharmap Atril Evince \
+libreoffice-writer libreoffice-calc libreoffice-impress \
+libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
+for i in ${office[@]}; do
+   bspc rule -a $i desktop='^5' follow=on focus=on; done
+
+# 6 > Communication
+declare -a comm=(Thunderbird discord TelegramDesktop Hexchat)
+for i in ${comm[@]}; do
+   bspc rule -a $i desktop='^6' follow=on focus=on; done
+
+# 7 > media
+declare -a media=(Audacity Music MPlayer Lxmusic Inkscape Gimp-2.10 obs)
+for i in ${media[@]}; do
+   bspc rule -a $i desktop='^7' state=floating follow=on focus=on; done
+
+# 8 > gaming
+declare -a gaming=(Steam lutris)
+for i in ${gaming[@]}; do
+   bspc rule -a $i desktop='^8' state=floating follow=on focus=on; done
+
+# 9 > settings
+bspc rule -a 'VirtualBox Manager' desktop='^9' follow=on focus=on
+bspc rule -a GParted desktop='^9' follow=on focus=on
+declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
+System-config-printer.py Exo-helper-1 \
+Xfce4-power-manager-settings)
+for i in ${settings[@]}; do
+   bspc rule -a $i desktop='^9' state=floating follow=on focus=on; done
+
+# special rules
+declare -a floating=(alacritty-float Pcmanfm Onboard Yad 'Firefox:Places' \
+Viewnior feh Nm-connection-editor)
+for i in ${floating[@]}; do
+   bspc rule -a $i state=floating follow=on focus=on; done
+
+bspc rule -a Conky state=floating manage=off
+bspc rule -a stalonetray state=floating manage=off
+
+## Autostart -------------------------------------------------#
+
+
+# Kill if already running
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar
+
+# Lauch Polybar
+
+polybar -c ~/.config/bspwm/polybar/config &
+
+# Lauch xsettingsd daemon
+xsettingsd &
+
+# polkit agent
+if [[ ! `pidof xfce-polkit` ]]; then
+	/usr/lib/xfce-polkit/xfce-polkit &
+fi
+
+# Lauch keybindings daemon
+sxhkd -c ~/.config/bspwm/sxhkdrc &
+
+# Enable Super Keys For Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+# Enable power management
+xfce4-power-manager &
+
+# Fix cursor
+xsetroot -cursor_name left_ptr
+
+# Restore wallpaper
+bash $HOME/.config/bspwm/fehbg
+
+# Start mpd
+# exec mpd &
+
+# Start bspwm scripts
+#bspcolors
+bspbar
+bspcomp
+bspdunst
+bspfloat &
+

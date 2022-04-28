@@ -1,5 +1,7 @@
 post_install() {
-	echo '*************************'
-	echo -e "\n[*] Configurations for BSPWM is updated.\nLooks like everything went okay... make sure to check everything manually in ~/.config to make sure the files have changed before rebooting/relogin!\n"
-	echo '*************************'
+	echo '**************************************************************************'
+	echo         [*] DOT Files installed in /usr/share/rxd-sakura 
+	echo [*] Make sure to run command " $ cp -r /usr/share/rxd-sakura/* ~/.config/ "
+	echo [*]          before rebooting/relogin to see changes!
+	echo '**************************************************************************'
 }
