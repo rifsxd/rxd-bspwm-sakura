@@ -4,6 +4,10 @@
 * PKG Including 
    * ROFI-MODULES (powermenu, network-manager-window, screenshotmenu, open-as-root-menu, windows-select-menu) & Find Out More By Trying It Out! 
 
+<p align="center">  
+    <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
+
+
 * Requirements -
    * Need to add rxd-arch-repo in pacman.conf for auto resolving dependencies/installing non-mainline arch (aur) prebuilt packages
          
@@ -52,7 +56,4 @@
    * color picker ( mod + p )
    * reload-all-configs ( alt + shift + r )
    
-
-<p align="center">  
-    <img alt="RxD BSPWM Preview" src="/docs/img/preview.png"/>
 
