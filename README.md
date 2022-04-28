@@ -4,7 +4,7 @@
 * PKG Including PICOM/XSHKD/FEH/NMD/ROFI-MODULES(powermenu, network-manager-window, screenshotmenu, open-as-root-menu, windows-select-menu) & Find Out More By Trying It Out! 
 
 * Requirements -
-   * Need to add rxd-arch-repo in pacman.conf for installing non-mainline arch (aur) prebuilt packages for dependencies 
+   * Need to add rxd-arch-repo in pacman.conf for auto resolving dependencies/installing non-mainline arch (aur) prebuilt packages for dependencies 
          
           [rxd-arch-repo]
           SigLevel = Optional DatabaseOptional
