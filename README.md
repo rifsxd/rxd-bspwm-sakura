@@ -6,27 +6,23 @@
 * Requirements -
    * Need to add rxd-arch-repo in pacman.conf for installing non-mainline arch (aur) prebuilt packages for dependencies 
          
-          ' [rxd-arch-repo]
-            SigLevel = Optional DatabaseOptional
-            Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64 '
+          [rxd-arch-repo]
+          SigLevel = Optional DatabaseOptional
+          Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
 * Dependencies -
    * mainline arch repo : { 
-   
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
 		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'           
 		    'maim' 'xclip' 'viewnior' 'feh' 'xfce4-power-manager' 
 		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
-		    
-	           	          }
+                         }
 	           	          
    * aur or rxd-arch-repo : {
-   
             'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
-            
                             }
                             
 * Installation -
