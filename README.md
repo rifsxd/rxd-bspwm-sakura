@@ -26,10 +26,14 @@
                             
                             
 * Installation -
-   * PACMAN_INSTALL: $ sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
-   * LOCAL_BUILD: $ git clone https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme.git
-                  $ cd $TO_THE_CLONED_REPO
-                  $ makepkg -si && cp -r /use/share/rxd-sakura/* ~/.config/
+   * PACMAN_INSTALL: 
+   
+              sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
+   * LOCAL_BUILD: $ 
+   
+              git clone https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme.git
+              cd $TO_THE_CLONED_REPO
+              makepkg -si && cp -r /use/share/rxd-sakura/* ~/.config/
                   
 * Usefull Keybinds -
    * mod = windows / command
