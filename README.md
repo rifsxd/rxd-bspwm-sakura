@@ -11,19 +11,19 @@
           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
 * Dependencies -
-   * mainline arch repo : { 
+   * mainline arch repo =
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
 		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'           
 		    'maim' 'xclip' 'viewnior' 'feh' 'xfce4-power-manager' 
 		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
-                         }
+                         
 	           	          
-   * aur or rxd-arch-repo : {
+   * aur or rxd-arch-repo =
             'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
-                            }
+                            
                             
 * Installation -
    * PACMAN_INSTALL: $ sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
