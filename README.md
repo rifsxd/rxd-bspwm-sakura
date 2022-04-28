@@ -11,7 +11,7 @@
           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
 * Dependencies -
-   * mainline arch repo =
+   * MAINLINE_ARCH_REPO =
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
@@ -20,7 +20,7 @@
 		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
                          
 	           	          
-   * aur or rxd-arch-repo =
+   * AUR OR RXD_ARCH_REPO =
             'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
                             
