@@ -8,7 +8,8 @@ url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
 arch=('any')
 license=('GPL3')
 makedepends=()
-depends=(       'bspwm'
+depends=(       
+        'bspwm'
 		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany' 'gpick'
 		'pavucontrol'
@@ -16,7 +17,7 @@ depends=(       'bspwm'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
 		'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
-        'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
+        'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git' 'ksuperkey'
 		'xfce4-power-manager' 
 		'xsettingsd'
 		'xorg-xsetroot'
