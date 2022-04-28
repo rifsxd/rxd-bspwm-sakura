@@ -12,6 +12,7 @@
          
 * Dependencies -
    * MAINLINE_ARCH_REPO =
+   
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
@@ -21,6 +22,7 @@
                          
 	           	          
    * AUR OR RXD_ARCH_REPO =
+   
             'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
                             
