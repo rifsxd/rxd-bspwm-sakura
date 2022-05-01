@@ -264,7 +264,7 @@ type = internal/date
 
 interval = 1.0
 
-time = %I:%M %p
+time = %H:%M:%S
 time-alt = %A, %d %B %Y
 
 format = <label>
@@ -339,7 +339,7 @@ ramp-signal-foreground = ${color.CYAN}
 type = custom/text
 content = //
 
-content-background = ${color.BACKGROUND}
+content-background = #030315
 content-foreground = #F15AA5
 content-padding = 2
 
