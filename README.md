@@ -28,19 +28,19 @@
 	           	          
    * AUR OR RXD_ARCH_REPO :
    
-            'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
+            'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar' 'i3lock-color'
             'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
                             
                             
 * Installation -
    * PACMAN_INSTALL: 
    
-              sudo pacman -S rxd-bspwm-sakura && cp -r /use/share/rxd-sakura/* ~/.config/
+              sudo pacman -S rxd-bspwm-sakura && cp -r /usr/share/rxd-sakura/* ~/.config/
    * LOCAL_BUILD: 
    
               git clone https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme.git
               cd $TO_THE_CLONED_REPO
-              makepkg -si && cp -r /use/share/rxd-sakura/* ~/.config/
+              makepkg -si && cp -r /usr/share/rxd-sakura/* ~/.config/
                   
 * Usefull Keybinds -
    * mod = windows / command

@@ -2,7 +2,7 @@
 
 pkgname=rxd-bspwm-sakura
 pkgrel=1
-pkgver=1.70
+pkgver=1.80
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
 arch=('any')
@@ -12,7 +12,7 @@ depends=(
         'bspwm'
 		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany' 'gpick'
-		'pavucontrol'
+		'pavucontrol' 'i3lock-color'
 		'rofi' 'dunst' 'xsel' 'xdotool'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
@@ -41,10 +41,6 @@ package() {
 	# Copy window manager configs
 	cp -r ${srcdir}/rxd-bspwm-sakura/bspwm 			        ${pkgdir}/usr/share/rxd-sakura/
 	cp -r ${srcdir}/rxd-bspwm-sakura/fonts		    ${pkgdir}/usr/share/fonts/
-	chmod +x ~/.config/bspwm/bin/*
-	chmod +x ~/.config/bspwm/rofi/bin/*
-	chmod +x ~/.config/bspwm/rofi/bin/*
-	chmod +x ~/.config/bspwm/polybar/extra-modules/*
 
 	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/bspwmrc   			${pkgdir}/usr/share/rxd-sakura/bspwm/bspwmrc
 	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/dunstrc   		    ${pkgdir}/usr/share/rxd-sakura/bspwm/dunstrc
