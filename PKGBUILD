@@ -12,7 +12,7 @@ depends=(
                 'bspwm'
 		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany' 'gpick'
-		'pavucontrol'
+		'pavucontrol' 'alsa-utils'
 		'rofi' 'dunst' 'xsel' 'xdotool'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
