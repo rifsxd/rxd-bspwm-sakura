@@ -15,21 +15,21 @@
           SigLevel = Optional DatabaseOptional
           Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
          
-* Dependencies (if not using rxd-arch-repo)-
+* Dependencies -
    * MAINLINE_ARCH_REPO :
    
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
-		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'           
+		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'
 		    'maim' 'xclip' 'viewnior' 'feh' 'xfce4-power-manager' 
-		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'   
+		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'
                          
 	           	          
-   * AUR OR RXD_ARCH_REPO :
+   * RXD_ARCH_REPO :
    
-            'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar' 'i3lock-color'
-            'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git'  'ksuperkey'
+            'rxd-ardesia' 'rxd-rofimoji' 'rxd-eww' 'rxd-networkmanager-dmenu' 'rxd-polybar' 'rxd-i3lock-color'
+            'rxd-betterlockscreen' 'rxd-xfce-polkit' 'rxd-picom' 'rxd-ksuperkey' 'rxd-cava' 'rxd-tty-clock'
                             
                             
 * Installation -
