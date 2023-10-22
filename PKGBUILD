@@ -1,23 +1,23 @@
 # Maintainer: RifsxD
 
 pkgname=rxd-bspwm-sakura
-pkgrel=1
-pkgver=1.80
+pkgrel=2
+pkgver=2.00
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
-url="https://github.com/RifsxD/RxD-BSPWM-Sakura-Theme"
+url="https://github.com/rifsxd/RxD-BSPWM-Sakura-Theme"
 arch=('any')
 license=('GPL3')
 makedepends=()
 depends=(       
-        'bspwm'
+                'bspwm'
 		'sxhkd' 'playerctl'
 		'alacritty' 'thunar' 'geany' 'gpick'
-		'pavucontrol' 'i3lock-color'
+		'pavucontrol'
 		'rofi' 'dunst' 'xsel' 'xdotool'
 		'mpd' 'mpc' 'jq' 'lxappearance'
 		'maim' 'xclip' 'viewnior' 'feh'
-		'ardesia' 'rofimoji' 'eww' 'networkmanager-dmenu-git' 'polybar'
-        'betterlockscreen' 'xfce-polkit' 'picom-ibhagwan-git' 'ksuperkey'
+		'rxd-ardesia' 'rxd-rofimoji' 'rxd-eww' 'rxd-networkmanager-dmenu' 'rxd-polybar' 'rxd-i3lock-color'
+                'rxd-betterlockscreen' 'rxd-xfce-polkit' 'rxd-picom' 'rxd-ksuperkey' 'rxd-cava' 'rxd-tty-clock'
 		'xfce4-power-manager' 
 		'xsettingsd'
 		'xorg-xsetroot'
