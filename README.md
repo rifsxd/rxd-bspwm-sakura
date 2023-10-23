@@ -21,7 +21,7 @@
             'bspwm' 'alacritty' 'thunar' 'geany' 'gpick'
 		    'sxhkd' 'playerctl' 'pavucontrol' 'rofi' 'dunst'
 		    'rofi' 'dunst' 'xsel' 'xdotool' 'mpd'
-		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim'
+		    'mpd' 'mpc' 'jq' 'lxappearance' 'maim' 'nm-connection-editor'
 		    'maim' 'xclip' 'viewnior' 'feh' 'xfce4-power-manager' 
 		    'xfce4-power-manager' 'xsettingsd' 'xorg-xsetroot' 'wmname'
                          
