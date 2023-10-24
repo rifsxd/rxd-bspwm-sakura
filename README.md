@@ -28,7 +28,7 @@
 	           	          
    * RXD_ARCH_REPO :
    
-            'rxd-ardesia' 'rxd-rofimoji' 'rxd-eww' 'rxd-networkmanager-dmenu' 'rxd-polybar' 'rxd-i3lock-color'
+            'rxd-ardesia' 'rxd-rofimoji' 'rxd-eww' 'rxd-networkmanager-dmenu' 'rxd-polybar' 'rxd-i3lock'
             'rxd-betterlockscreen' 'rxd-xfce-polkit' 'rxd-picom' 'rxd-ksuperkey' 'rxd-cava' 'rxd-tty-clock'
                             
                             

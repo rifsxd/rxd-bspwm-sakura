@@ -17,7 +17,7 @@ trap exit_on_signal_SIGTERM SIGTERM
 # Build packages
 build_pkg () {
 	echo -e "\nBuilding Package - \n"
-	makepkg -s && rm -rf src pkg
+	makepkg -s -f && rm -rf pkg
 	
 	RDIR='../packages/x86_64'
 	if [[ -d "$RDIR" ]]; then
@@ -27,6 +27,7 @@ build_pkg () {
 }
 
 # Execute
-yay -S rxd-ardesia rxd-eww rxd-networkmanager-dmenu rxd-polybar rxd-ksuperkey rxd-betterlockscreen rxd-xfce-polkit rxd-picom
-paru -S rxd-ardesia rxd-eww rxd-networkmanager-dmenu rxd-polybar rxd-ksuperkey rxd-betterlockscreen rxd-xfce-polkit rxd-picom
-makepkg -si
+build_pkg
+#yay -S rxd-ardesia rxd-eww rxd-networkmanager-dmenu rxd-polybar rxd-ksuperkey rxd-betterlockscreen rxd-xfce-polkit rxd-picom
+#paru -S rxd-ardesia rxd-eww rxd-networkmanager-dmenu rxd-polybar rxd-ksuperkey rxd-betterlockscreen rxd-xfce-polkit rxd-picom
+#makepkg -si

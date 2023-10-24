@@ -33,7 +33,7 @@ set_values() {
 
 ## Launch Polybar with selected style
 launch_bar() {
-	CARD=$(light -L | grep 'backlight' | head -n1 | cut -d'/' -f3)
+	# CARD=$(light -L | grep 'backlight' | head -n1 | cut -d'/' -f3)
 	INTERFACE=$(ip link | awk '/state UP/ {print $2}' | tr -d :)
 
 	if [[ ! -f "$MFILE" ]]; then
@@ -50,7 +50,7 @@ launch_bar() {
 	fi
 		
 	if [[ ! `pidof polybar` ]]; then
-		polybar -q main -c "$DIR"/config &
+		polybar -q -c "$DIR"/config &
 	else
 		polybar-msg cmd restart
 	fi

@@ -5,7 +5,6 @@
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
 
 ## Java Applications
-wmname RxD
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 ## Get colors from .Xresources -------------------------------#
@@ -23,6 +22,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #	WHITE=$(xrdb -query | grep 'color7:'| awk '{print $NF}')
 #}
 #getcolors
+
+wmname rxdwm
 
 ## Configurations --------------------------------------------#
 workspaces() {
@@ -121,11 +122,11 @@ bspc rule -a stalonetray state=floating manage=off
 
 
 # Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager polybar
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager bspc xfce-polkit
 
 # Lauch Polybar
 
-polybar -c ~/.config/bspwm/polybar/config &
+# polybar -c ~/.config/bspwm/polybar/config &
 
 # Lauch xsettingsd daemon
 xsettingsd &
@@ -159,5 +160,5 @@ bash $HOME/.config/bspwm/fehbg
 bspbar
 bspcomp
 bspdunst
-bspfloat &
+bspfloat
 
