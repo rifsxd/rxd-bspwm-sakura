@@ -284,7 +284,7 @@ label-foreground = #EC98F2
 type = custom/script
 exec = busctl --user -j get-property io.ntfd /weather openweathermap.strings RenderedTemplate | jq -r .data
 interval = 60
-label-font = 1
+label-font = 5
 label-foreground = #EC98F2
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
