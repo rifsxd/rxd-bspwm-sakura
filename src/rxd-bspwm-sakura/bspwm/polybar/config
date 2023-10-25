@@ -45,9 +45,9 @@ font-1 = "Iosevka Nerd Font:size=12;3"
 font-2 = "Iosevka:style=bold:size=12;3"
 font-3 = "Noto Sans CJK JP:size=10;3"
 
-modules-left = mod win sep bspwm sep
-modules-center = mpris
-modules-right = sep ethernet sep volume sep date
+modules-left = xkill mod win mpris 
+modules-center = sep bspwm sep
+modules-right = sep ethernet sep weather sep volume sep date
 
 separator =
 spacing = 0

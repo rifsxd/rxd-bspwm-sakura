@@ -2,7 +2,7 @@
 
 pkgname=rxd-bspwm-sakura
 pkgrel=1
-pkgver=2.17
+pkgver=2.20
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/rifsxd/RxD-BSPWM-Sakura-Theme"
 arch=('any')
@@ -34,6 +34,7 @@ package() {
 	
 	cp -r ${srcdir}/rxd-bspwm-sakura/networkmanager-dmenu	${pkgdir}/usr/share/rxd-sakura/
 	cp -r ${srcdir}/rxd-bspwm-sakura/eww	                ${pkgdir}/usr/share/rxd-sakura/
+	cp -r ${srcdir}/rxd-bspwm-sakura/ntfd	                ${pkgdir}/usr/share/rxd-sakura/
 	cp -r ${srcdir}/rxd-bspwm-sakura/geany	                ${pkgdir}/usr/share/rxd-sakura/
 	cp -r ${srcdir}/rxd-bspwm-sakura/alacritty	            ${pkgdir}/usr/share/rxd-sakura/
 	cp -r ${srcdir}/rxd-bspwm-sakura/wallpapers	            ${pkgdir}/usr/share/rxd-sakura/
@@ -43,9 +44,9 @@ package() {
 	cp -r ${srcdir}/rxd-bspwm-sakura/fonts		    ${pkgdir}/usr/share/fonts/
 
 	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/bspwmrc   			${pkgdir}/usr/share/rxd-sakura/bspwm/bspwmrc
-	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/dunstrc   		    ${pkgdir}/usr/share/rxd-sakura/bspwm/dunstrc
-	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/picom.conf   		${pkgdir}/usr/share/rxd-sakura/bspwm/picom.conf
+	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/dunstrc   		    ${pkgdir}/usr/share/rxd-sakura/bspwm/dunstrc
+	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/picom.conf   		${pkgdir}/usr/share/rxd-sakura/bspwm/picom.conf
 
 	# Copy keybindings config file
-	install -Dm 644 ${srcdir}/rxd-bspwm-sakura/bspwm/sxhkdrc				${pkgdir}/usr/share/rxd-sakura/bspwm/sxhkdrc
+	install -Dm 755 ${srcdir}/rxd-bspwm-sakura/bspwm/sxhkdrc				${pkgdir}/usr/share/rxd-sakura/bspwm/sxhkdrc
 }

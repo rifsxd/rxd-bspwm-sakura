@@ -252,10 +252,12 @@ tail = true
 click-left = ~/.config/bspwm/polybar/extra-modules/mpris.py previous &
 click-right = ~/.config/bspwm/polybar/extra-modules/mpris.py next &
 click-middle = ~/.config/bspwm/polybar/extra-modules/mpris.py play-pause &
-format-foreground = #EC98F3
 format = <label>
 label-font = 4
 label-maxlen = 40
+format-background = #EB97F2
+format-foreground = #030315
+format-padding = 1
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -275,6 +277,35 @@ format-prefix-foreground = #5EBCE1
 label = %time%
 label-font = 1
 label-foreground = #EC98F2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/weather]
+type = custom/script
+exec = busctl --user -j get-property io.ntfd /weather openweathermap.strings RenderedTemplate | jq -r .data
+interval = 60
+label-font = 1
+label-foreground = #EC98F2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/github]
+type = custom/script
+exec = busctl --user -j get-property io.ntfd /github github.strings RenderedTemplate | jq -r .data
+interval = 10
+label-font = 3
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/xkill]
+type = custom/text
+content = 
+content-font = 1
+content-background = #EB97F2
+content-foreground = #030315
+content-padding = 1
+click-left = ~/.config/bspwm/xkill
+
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -351,7 +382,7 @@ type = internal/xwindow
 ; Available tags:
 ;   <label> (default)
 format = <label>
-format-background = #EB97F2
+format-background = #A6CFFD
 format-foreground = #030315
 format-padding = 1
 
