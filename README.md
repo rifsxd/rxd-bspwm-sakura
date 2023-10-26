@@ -11,9 +11,9 @@
 * Requirements -
    * Need to add rxd-arch-repo in pacman.conf for auto resolving dependencies/installing non-mainline arch (aur) prebuilt packages
          
-          [rxd-arch-repo]
+          [rxd-sakura]
           SigLevel = Optional DatabaseOptional
-          Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/x86_64
+          Server = https://raw.githubusercontent.com/RifsxD/rxd-arch-repo/main/$repo/$arch
          
 * Dependencies -
    * MAINLINE_ARCH_REPO :
