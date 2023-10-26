@@ -91,7 +91,7 @@ for i in ${comm[@]}; do
    bspc rule -a $i desktop='^6' follow=on focus=on; done
 
 # 7 > media
-declare -a media=(Audacity Music MPlayer Lxmusic Inkscape Gimp-2.10 obs)
+declare -a media=(Spotify Audacity Music MPlayer Lxmusic obs)
 for i in ${media[@]}; do
    bspc rule -a $i desktop='^7' state=floating follow=on focus=on; done
 
@@ -102,10 +102,7 @@ for i in ${gaming[@]}; do
 
 # 9 > settings
 bspc rule -a 'VirtualBox Manager' desktop='^9' follow=on focus=on
-bspc rule -a GParted desktop='^9' follow=on focus=on
-declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
-System-config-printer.py Exo-helper-1 \
-Xfce4-power-manager-settings)
+declare -a settings=(Lxappearance Lxtask Lxrandr Arandr System-config-printer.py Exo-helper-1 Xfce4-power-manager-settings Inkscape Gimp-2.10 GParted)
 for i in ${settings[@]}; do
    bspc rule -a $i desktop='^9' state=floating follow=on focus=on; done
 
@@ -153,7 +150,7 @@ xfce4-power-manager &
 xsetroot -cursor_name left_ptr
 
 # Restore wallpaper
-bash $HOME/.config/bspwm/fehbg
+bash $HOME/.config/bspwm/bin/fehbg
 
 # Start mpd
 # exec mpd &

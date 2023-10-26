@@ -31,10 +31,10 @@ super + {w,m,x,r,s}
 ##---------- Custom Keybinds ----------##
 
 super + alt {1,2,3,4,5}
-	{env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify,steam,discord,bootstrap-studio,github-desktop}
+	{spotify,steam,discord,bootstrap-studio,github-desktop}
 
 super + alt + 0
-    rofimoji
+    sh ~/.config/bspwm/rofi/bin/rofiemoji
     
 super + b
      eww open-many weather_side time_side smol_calendar player_side sys_side sliders_side

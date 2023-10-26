@@ -304,7 +304,7 @@ content-font = 1
 content-background = #EB97F2
 content-foreground = #030315
 content-padding = 1
-click-left = ~/.config/bspwm/xkill
+click-left = ~/.config/bspwm/polybar/extra-modules/xkill
 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
