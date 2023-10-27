@@ -27,6 +27,18 @@ super + n
 # Rofi Menus/Applets
 super + {w,m,x,r,s}
 	sh ~/.config/bspwm/rofi/bin/{windows,mpd,powermenu,asroot,screenshot}
+	
+# Bspwm Layouts Cycle - Next
+super + BackSpace
+	~/.config/bspwm/bin/layout next --layouts tall,rtall,wide,rwide,grid,rgrid,even
+	
+# Bspwm Layouts Monocle
+super + equal
+	~/.config/bspwm/bin/layout set monocle
+	
+# Bspwm Layouts Monocle
+super + minus
+	~/.config/bspwm/bin/layout set tiled
 
 ##---------- Custom Keybinds ----------##
 

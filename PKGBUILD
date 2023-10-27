@@ -2,7 +2,7 @@
 
 pkgname=rxd-bspwm-sakura
 pkgrel=1
-pkgver=2.35
+pkgver=2.36
 pkgdesc="RifsxD's Bspwm Configurations for Arch"
 url="https://github.com/rifsxd/RxD-BSPWM-Sakura-Theme"
 arch=('x86_64')
