@@ -17,7 +17,7 @@ use-ui-max = true
 interval = 5
 
 format-volume = <ramp-volume> <label-volume>
-label-volume-foreground = #AB7DE1
+label-volume-foreground = #EC98F2
 
 format-muted = <label-muted>
 format-muted-prefix = 婢
@@ -39,7 +39,7 @@ ramp-volume-7 = 墳
 ramp-volume-8 = 墳
 ramp-volume-9 = 墳
 ramp-volume-font = 2
-ramp-volume-foreground = #AB7DE1
+ramp-volume-foreground = #EC98F2
 
 ramp-headphones-0 = 
 ramp-headphones-1 = 
