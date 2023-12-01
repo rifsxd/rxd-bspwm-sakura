@@ -119,7 +119,7 @@ bspc rule -a stalonetray state=floating manage=off
 
 
 # Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager bspc xfce-polkit ntfd
+killall xsettingsd sxhkd dunst ksuperkey xfce4-power-manager bspc xfce-polkit ntfd
 
 # Lauch Polybar
 
